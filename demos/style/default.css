@@ -1,0 +1,29 @@
+.le-common-default{
+	border: 0;
+	font-family:Consolas, 'Liberation Mono', Courier, monospace;
+	font-size: 12px;
+	line-height: 18px;
+	min-height: 100px;
+	position:absolute;
+	width:980px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box
+}
+.le-textarea-default{
+	padding: 10px 10px 10px 51px;
+	background-color: transparent;
+	overflow: hidden;
+	resize: none;
+	word-wrap: break-word;
+}
+.le-textboard-default{
+	padding: 0;
+	background-color: transparent;
+}
+.le-pre-default{
+	padding: 10px 10px 10px 51px;
+	background-color: transparent;
+	top:0;
+	word-wrap: break-word;
+	visibility: hidden;
+}

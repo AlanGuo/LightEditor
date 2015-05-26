@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Alan"/>
+	<meta name="Copyright" content="Alan"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="style\default.css">
+	<link rel="stylesheet" type="text/css" href="style\page.css">
+</head>
+<body>
+	<script type="text/javascript">
+		window.$ = function(id){
+			return document.getElementById(id);
+		}
+	</script>
+	<!--banner start-->
+	<div class="banner hc"><img src="./style/img/banner.png"/></div>
+	<!--banner end-->
+
+	<div class="body_wrapper hc">
+		<!--download start-->
+		<div class="download_div">
+			<span class="title">Download</span>
+			<img src="./style/img/ico_download.png">
+			<span class="download_link">
+				<a title="完整带注释版" download target="_blank" href="../release/lighteditor-1.0.js">>> lighteditor.js</a>
+				<a title="压缩版" download target="_blank" href="../release/lighteditor-1.0.min.js" class="link2">>> lighteditor.min.js</a>
+			</span>
+		</div>
+		<!--download end-->
+
+		<!--editor start-->
+		<div class="editor_div">
+			<textarea id="textarea"><!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Alan"/>
+	<meta name="Copyright" content="Alan"/>
+</head>
+<body>
+	<div class="editor_div">
+		&lt;textarea id="textarea"&gt;&lt;/textarea&gt;
+	</div>
+	<script type="text/javascript">
+		window.onload  = function(){
+			var textarea = $("textarea");
+			new LE.lightEditor(textarea,{language:"js"});
+		}
+	</script>
+</body>
+</html></textarea>
+		</div>
+		<!--editor end-->
+
+		<!--fork me on github start-->
+		<div class="fork_div"><a class="primary_button" href="https://github.com/AlanGuo/LightEditor" target="_blank">Fork me on Github</a></div>
+		<!--fork me on github end-->
+
+		<!--bottom start-->
+		<div class="copyright_div">Alan @ 2013/07/10</div>
+		<!--bottom end-->
+	</div>
+
+	<script type="text/javascript">
+		window.onload  = function(){
+			var textarea = $("textarea");
+			new LE.lightEditor(textarea,{language:"html"});
+		}
+	</script>
+	<script type="text/javascript" src="../release/lighteditor-1.0.js" ></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+	projects: [
+			{
+				name :  "qnml.js",
+				target : "../src/lib/qnml/qnml-1.0.js",
+				include : [
+					"../src/lib/qnml/src/index.js",
+					"../src/lib/qnml/src/lib/",
+					"../src/lib/qnml/src/language/"
+				],
+				template: [
+					"../src/lib/qnml/src/template/"
+				]
+			},
+			{
+				name :  "lighteditor.js",
+				target : ["../apps/scripts/lighteditor-1.0.js"],
+				compiler:"../release/lighteditor-1.0.min.js",
+				include : [
+					"../src/lib/qnml/qnml-1.0.js",
+					"../src/lib/undo-1.0.js",
+					"../src/lighteditor.js"
+				],
+				template: [
+				]
+			}
+	]
+}

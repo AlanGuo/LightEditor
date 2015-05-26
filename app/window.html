@@ -1,0 +1,66 @@
+<!doctype html>
+<html ng-app="codepad" ng-csp>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Alan">
+	<meta name="copyright" content="Alan">
+	<meta name="keywords" content="code,editor">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>CodePad</title>
+	<link rel="stylesheet" type="text/css" href="styles\angular-csp.css">
+	<link rel="stylesheet" type="text/css" href="styles\theme\snowball\component.css">
+	<link rel="stylesheet" type="text/css" href="styles\theme\predefined-common.css">
+	<link rel="stylesheet" type="text/css" href="styles\theme\predefined-form.css">
+	<link rel="stylesheet" type="text/css" href="styles\lighteditor\default.css">
+	<link rel="stylesheet" type="text/css" href="styles\page.css">
+</head>
+<body class="confui snowball" ng-keybind>
+	<!--侧边栏-->
+	<nav class="sidebar" ng-controller="IndexController">
+		
+		<ul class="hoverlist">
+			<li class="content" ng-class="{'current-noborder':$index==selectedIndex}" data-index="{{$index}}" data-name="{{snippet.name}}" ng-repeat="snippet in snippets" ng-click="selected($event)" ng-mouseenter="mouseEnter($event)" ng-mouseleave="mouseLeave($event)">
+				{{snippet.name}}
+				<a class="fr close none" href="#" data-name="{{snippet.name}}" ng-click="delete($event)"><i class="confui-iconfont icon-guanbi"></i></a>
+			</li>
+		</ul>
+		<button class="w100p mt10" ng-class="{'current-noborder':selectedIndex == -1}" ng-click="new($event)">+</button>
+	</nav>
+	<!--侧边栏-->
+	
+	<!--编辑器-->
+	<div class="ml150 ofh">
+		<textarea ng-lighteditor></textarea>
+	</div>
+	<!--编辑器-->
+
+	<!--对话框-->
+	<div ng-controller="DialogController">
+		<!--遮罩层-->
+		<div class="overlay" ng-show="show"></div>
+		<!--遮罩层-->	
+		<div class="dialog" style="top:{{position.top}};left:{{position.left}};visibility:{{visibility}}" ng-show="show">
+			<div class="topbar clearfix">
+				<span class="title">{{title}}</span>
+				<span class="buttons"><a class="close" href="#" ng-click="closeDialog($event)"></a></span>
+			</div>
+			<div class="content">
+				<form class="mf" ng-submit="submit()">
+					<fieldset>
+						<legend>{{legend}}</legend>
+						<div class="form-content"></div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--对话框-->
+
+	<script type="text/javascript" src="scripts/lib/keymap-1.0.js" async></script>	
+	<script type="text/javascript" src="scripts/lib/magicform-1.0.js" async></script>
+	<script type="text/javascript" src="scripts/lib/dialog-1.0.js" async></script>	
+	<script type="text/javascript" src="scripts/lib/lighteditor-1.0.js"></script>
+	<script type="text/javascript" src="scripts/lib/angular.js"></script>
+	<script type="text/javascript" src="scripts/dist/all.js"></script>
+</body>
+</html>

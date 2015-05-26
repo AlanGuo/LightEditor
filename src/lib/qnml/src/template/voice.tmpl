@@ -1,0 +1,36 @@
+<template name="QNML.STYLE.VOICE">
+	.voice_control{cursor:pointer}
+	.stationary_voice_box .clipName,.stationary_voice_box .clipSeconds,.stationary_voice_box .clipSize{position:relative; top:9px; margin-right:10px}
+	.voice_box .g_ico_popClose{cursor:pointer}
+	.g_md_clipBox_play .g_ico_popClose{right:0px; top:0px}
+	.download_voice{width:12px; height:13px; display:inline-block; cursor:pointer; 
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAANAQMAAACn5x0BAAAAA3NCSVQICAjb4U/gAAAABlBMVEWGjZT///8WZGrIAAAAAnRSTlP/AOW3MEoAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDgvMTcvMTMNl9j1AAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M1cbXjNgAAABxJREFUCJlj+PCBAQ0dMGB4UABiWB5gsD/AAAYApKERWcskvewAAAAASUVORK5CYII="); position: relative; left: 10px; top: 10px;
+	}
+	.g_md_clipBox_play .download_voice{display:none}
+	
+</template>
+<template name="QNML.TPL.VOICE">
+<div class="qnml-box">
+	<div>&nbsp;</div><!--no url start-->
+	<div data-qnml="<%=data.tag%>" class="content_delete_ie">
+		<div class="g_md_clipBox voice_box stationary_voice_box" contenteditable="false" unselectable="on" data-src="<%=data.src%>" data-seconds="<%=data.seconds%>">
+			<span class="ico_clip clip_play voice_control" _event="playVoice">播放</span>
+			<span class="ico_clip clip_pause voice_control" _event="pauseVoice" style="display:none">暂停</span>
+			<span class="ico_clip clip_stop voice_control" _event="stopVoice" style="display:none">停止</span>
+			<div class="progressBar_play">
+				<p style="width:0%;" class="progress_play">
+					<span class="progress_dot" _event = "voiceProgress"></span>
+				</p>
+			</div>
+			<span class="clipName">录音</span>
+			<span class="clipSeconds"><%=data.formartSeconds%></span>
+			<span class="clipSize"><%=data.filesize%></span>
+			<span class="time_current" style="display:none">00:00</span>
+			<span class="time_total" style="display:none"><%=data.formartSeconds%></span>
+			<span title="删除录音" _event="delVoice" class="g_ico g_ico_popClose"></span>
+			<span class="download_voice" _event="downloadVoice" title="下载"></span>
+	    </div>
+	</div><!--no url end-->
+    <div>&nbsp;</div>
+</div>
+</template>

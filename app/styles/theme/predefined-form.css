@@ -1,0 +1,207 @@
+/*预定义表单的布局*/
+@font-face {
+  font-family: 'mf-iconfont';
+  src: url('../iconfont.eot');
+  src: url('../iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../iconfont.woff') format('woff'), /* chrome、firefox */ url('../iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../iconfont.svg#uxiconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+.confui .mf .confui .mf-iconfont {
+  font-family: "mf-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.confui .mf .ml10 {
+  margin-left: 10px;
+}
+.confui .mf .ml15 {
+  margin-left: 15px;
+}
+.confui .mf .f32 {
+  font-size: 32px;
+}
+.confui .mf .form-icon {
+  text-decoration: none;
+  color: gray;
+}
+.confui .mf .form-icon:hover {
+  text-decoration: none;
+  color: #3a92db;
+}
+.confui .mf .form-icon-close {
+  color: #bf0005;
+}
+.confui .mf .form-icon-close:hover {
+  color: red;
+}
+.confui .mf .clearfix {
+  clear: both;
+}
+.confui .mf .fr {
+  float: right;
+}
+.confui .mf .formitem-ml10 {
+  margin-left: 10px;
+}
+.confui .mf .formitem-ml50 {
+  margin-left: 50px;
+}
+.confui .mf .form-group {
+  margin: 16px 0 0 0;
+}
+.confui .mf .form-group:first-child {
+  margin: 0;
+}
+/*label预置样式*/
+.confui .mf .formitem-label {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.confui .mf .formitem-label.none {
+  display: none;
+}
+.confui .mf .formitem-label.fb {
+  font-weight: bold;
+}
+.confui .mf .formitem-label.w10p {
+  width: 10%;
+}
+.confui .mf .formitem-label.w15p {
+  width: 15%;
+}
+.confui .mf .formitem-label.w20p {
+  width: 20%;
+}
+.confui .mf .formitem-label.w30p {
+  width: 30%;
+}
+.confui .mf .formitem-label.w40p {
+  width: 40%;
+}
+.confui .mf .formitem-label.w50p {
+  width: 50%;
+}
+.confui .mf .formitem-label.mr5p {
+  margin-right: 5%;
+}
+.confui .mf .formitem-label.mr10p {
+  margin-right: 10%;
+}
+.confui .mf .formitem-label.w100 {
+  width: 100px;
+}
+.confui .mf .formitem-label.w150 {
+  width: 150px;
+}
+.confui .mf .formitem-label.w300 {
+  width: 300px;
+}
+.confui .mf .formitem-label.mr80 {
+  margin-right: 80px;
+}
+.confui .mf .formitem-label.mr100 {
+  margin-right: 100px;
+}
+.confui .mf .formitem-label.align-right {
+  text-align: right;
+}
+.confui .mf .formitem-label.align-left {
+  text-align: left;
+}
+/*control预置样式*/
+.confui .mf .formitem-control {
+  display: inline-block;
+}
+.confui .mf .formitem-control.w100p {
+  width: 100%;
+}
+.confui .mf .formitem-control.w85p {
+  width: 83%;
+}
+.confui .mf .formitem-control.w80p {
+  width: 78%;
+}
+.confui .mf .formitem-control.w75p {
+  width: 73%;
+}
+.confui .mf .formitem-control.w70p {
+  width: 68%;
+}
+.confui .mf .formitem-control.w65p {
+  width: 63%;
+}
+.confui .mf .formitem-control.w60p {
+  width: 58%;
+}
+.confui .mf .formitem-control.w55p {
+  width: 53%;
+}
+.confui .mf .formitem-control.w50p {
+  width: 48%;
+}
+.confui .mf .formitem-control.w45p {
+  width: 43%;
+}
+.confui .mf .formitem-control.w40p {
+  width: 33%;
+}
+.confui .mf .formitem-control.w150 {
+  width: 150px;
+}
+.confui .mf .formitem-control.w200 {
+  width: 200px;
+}
+.confui .mf .formitem-control.w300 {
+  width: 300px;
+}
+.confui .mf .formitem-control.w400 {
+  width: 400px;
+}
+.confui .mf .formitem-control.w500 {
+  width: 500px;
+}
+.confui .mf .formitem-control.formitem-input[data-listitem=listitem] {
+  width: 92%;
+}
+.confui .mf .formitem-control .form-array-li.w50p .formitem-input[data-listitem] {
+  width: 84%;
+}
+.confui .mf .formitem-control .form-array-li.w45p .formitem-input[data-listitem=listitem] {
+  width: 100%;
+}
+.confui .mf .form-array-li.w45p {
+  width: 45%;
+}
+.confui .mf .form-array-li.w50p {
+  width: 50%;
+}
+.confui .mf .formitem-radio-label {
+  margin: 0 10px;
+}
+.confui .mf .formitem-checkbox-label {
+  margin: 0 10px;
+}
+.confui .mf .form-array-li {
+  display: inline-block;
+  margin-top: 5px;
+  width: 100%;
+}
+/*
+.confui .mf .formitem-input,.confui .mf .formitem-select{width: 150px;padding:3px;}
+*/
+.confui .mf .form-item-remove {
+  margin-left: 6px;
+  visibility: hidden;
+}
+.confui .mf .form-item-remove:hover {
+  color: red;
+}
+.confui .mf .form-item-add {
+  padding-bottom: 5px;
+}

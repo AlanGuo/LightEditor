@@ -1,0 +1,66 @@
+body{
+	background: #eaeaea;
+	font-family: "Trebuchet MS" "微软雅黑";
+	margin:0
+}
+
+.hc{
+	margin:0 auto;
+}
+
+.banner{
+	width:1000px;
+}
+
+.primary_button{
+	background:#319ff5; /* 一些不支持背景渐变的浏览器 */
+    filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#34aafe,endcolorstr=#2a89e2,gradientType=0);
+    -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#34aafe,endcolorstr=#2a89e2,gradientType=0);/*IE8*/
+    background: #319ff5 -webkit-gradient(linear, 0 0, 0 bottom, from(#34aafe), to(#2a89e2));
+	background: #319ff5 -webkit-linear-gradient(#34aafe, #2a89e2);
+	background: #319ff5 -moz-linear-gradient(#34aafe, #2a89e2);
+	background: #319ff5 -ms-linear-gradient(#34aafe, #2a89e2);
+	background: #319ff5 -o-linear-gradient(#34aafe, #2a89e2);
+	background: #319ff5 linear-gradient(#34aafe, #2a89e2);
+	background-repeat : no-repeat;
+	border:1px solid #83b9ff;
+	border-radius: 4px;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none
+}
+
+.body_wrapper{
+	width: 980px;
+	margin-top: -20px
+}
+.editor_div{
+	margin-top:10px;
+	background: white;
+	border: 1px solid #b2b2b2;
+}
+.download_div .title{
+	font-size: 1.6em;
+}
+.download_div a{
+	text-decoration: none;
+	color: #6695ce
+}
+.download_div a:hover{
+	text-decoration: underline;
+}
+.download_div .download_link{
+	margin-left: 40px
+}
+.download_div .download_link .link2{
+	margin-left: 20px
+}
+.fork_div{
+	text-align: center;
+	margin-top: 60px;
+}
+.copyright_div{
+	color: #b2b2b2;
+	text-align: center;
+	margin-top: 30px;
+}

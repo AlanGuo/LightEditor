@@ -1,0 +1,603 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'confui-iconfont';
+  src: url('../iconfont.eot');
+  src: url('../iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../iconfont.woff') format('woff'), /* chrome、firefox */ url('../iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('../iconfont.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+.confui .confui-iconfont {
+  font-family: "confui-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-mulu:before {
+  content: "\f00e1";
+}
+.icon-jian:before {
+  content: "\f0153";
+}
+.icon-jia:before {
+  content: "\f0154";
+}
+.icon-guanbi:before {
+  content: "\343c";
+}
+.icon-icon:before {
+  content: "\e604";
+}
+/**
+ * 
+ * @authors alandlguo (alandlguo@tencent.com)
+ * @date    2013-12-23 20:12:08
+ */
+/*reset*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  font-family: arial, sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/**
+ * confui layout
+ * @authors alandlguo (alandlguo@tencent.com)
+ * @date    2013-12-23 20:12:08
+ */
+/*less params*/
+/*common style*/
+.confui .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.confui .ofh {
+  overflow: hidden;
+}
+.confui .left {
+  padding-left: 1em;
+}
+.confui .tc {
+  text-align: center;
+}
+.confui .right {
+  padding-right: 1em;
+  float: right;
+}
+.confui .fl {
+  float: left;
+}
+.confui .fr {
+  float: right;
+}
+.confui .inlineblock {
+  display: inline-block;
+}
+.confui .h1 {
+  height: 1px;
+}
+.confui .noborder {
+  border: 0;
+}
+.confui .noresize {
+  resize: none;
+}
+.confui .inputpadding {
+  padding: .5em;
+}
+.confui .contentpadding {
+  padding: 1em;
+}
+.confui .listpadding {
+  padding: 0.5em 0.8em;
+}
+.confui .buttonpadding {
+  padding: 0.3em 1.2em 0.3em 1.2em;
+}
+.confui .lineheight1p75 {
+  line-height: 1.75em;
+}
+.confui .marginauto {
+  margin: 0 auto;
+}
+.confui .pa {
+  position: absolute;
+}
+.confui .pr {
+  position: relative;
+}
+.confui .b0 {
+  bottom: 0;
+}
+/**
+ * confui font.less
+ * @authors alandlguo (alandlguo@tencent.com)
+ * @date    2013-12-23 20:12:08
+ */
+.confui .fb {
+  font-weight: bold;
+}
+.confui .text-limit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.confui .nodecoration {
+  text-decoration: none;
+}
+.confui .f32 {
+  font-size: 32px;
+}
+.confui .small {
+  font-size: small;
+}
+.confui .tc {
+  text-align: center;
+}
+/**
+ * confui style
+ * @authors alandlguo (alandlguo@tencent.com)
+ * @date 2013-12-23 20:12:08
+ */
+/**
+ * confui style
+ * @authors alandlguo (alandlguo@tencent.com)
+ * @date 2013-12-23 20:12:08
+ */
+.confui .pointer {
+  cursor: pointer;
+}
+/*color define*/
+/*control disable*/
+/*common colors*/
+/*close button*/
+/*primary button*/
+/*normal button*/
+/*link color*/
+/*status color*/
+/*border*/
+/*子样式可组合*/
+/*dialog*/
+.confui.snowball .dialog {
+  position: absolute;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  z-index: 101;
+}
+.confui.snowball .dialog .topbar {
+  background: #333333;
+  height: 30px;
+}
+.confui.snowball .dialog .topbar .title {
+  float: left;
+  line-height: 1.75em;
+  padding-left: 1em;
+  color: #ffffff;
+}
+.confui.snowball .dialog .topbar .buttons {
+  float: right;
+  margin-top: -1px;
+  height: 32px;
+  overflow: hidden;
+}
+.confui.snowball .dialog .topbar .buttons .close {
+  text-decoration: none;
+  color: #bf0005;
+}
+.confui.snowball .dialog .topbar .buttons .close:before {
+  font-family: "confui-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 32px;
+  background: #ffffff;
+  content: "\e602";
+}
+.confui.snowball .dialog .topbar .buttons .close:hover {
+  color: #ff0000;
+}
+.confui.snowball .dialog .content {
+  padding: 1em;
+}
+/*form*/
+.confui.snowball form fieldset,
+.confui.snowball .form fieldset {
+  border: 1px solid #dddddd;
+  -webkit-padding-before: 0.35em;
+  -webkit-padding-start: 0.75em;
+  -webkit-padding-end: 0.75em;
+  -webkit-padding-after: 0.75em;
+  background: #f6f6f6;
+  border-radius: 4px;
+}
+.confui.snowball form fieldset legend,
+.confui.snowball .form fieldset legend {
+  margin-bottom: .75em;
+}
+.confui.snowball .formlist li {
+  margin-bottom: 1em;
+}
+.confui.snowball .formlist li .label {
+  display: inline-block;
+  width: 20%;
+  margin-right: 5%;
+  text-align: right;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-bottom: .5em;
+}
+.confui.snowball .formlist li .label.tl {
+  text-align: left;
+}
+.confui.snowball .formlist li .control {
+  width: 70%;
+}
+.confui.snowball form .toolbars_floatright,
+.confui.snowball .form .toolbars_floatright {
+  float: right;
+  margin-top: 1em;
+}
+.confui.snowball form .toolbars,
+.confui.snowball .form .toolbars {
+  margin-top: 1em;
+}
+.confui.snowball {
+  color: #545454;
+}
+.confui.snowball .icon16 {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.confui.snowball .seprator {
+  border: 0;
+  height: 1px;
+  background: #dddddd;
+}
+.confui.snowball .bar {
+  background: #333333;
+  color: #ffffff;
+}
+.confui.snowball .bar .content {
+  line-height: 1.75em;
+}
+/*页脚*/
+.confui.snowball .footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 2em;
+}
+/*触摸的列表*/
+.confui.snowball .touchlist li {
+  border-bottom: 1px solid #dddddd;
+}
+.confui.snowball .touchlist li:active {
+  border-radius: 4px;
+  background: #bbbbbb;
+}
+.confui.snowball .touchlist li.content {
+  padding: 0.5em 0.8em;
+}
+/*指针设备的列表*/
+.confui.snowball .hoverlist li {
+  cursor: pointer;
+}
+.confui.snowball .hoverlist li:hover {
+  border-radius: 4px;
+  background: #cccccc;
+}
+.confui.snowball .hoverlist li.content {
+  padding: 0.5em 0.8em;
+}
+/*基础链接*/
+.confui.snowball a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #0097ff;
+}
+.confui.snowball a:visited {
+  color: #0099dd;
+}
+.confui.snowball a:hover {
+  color: #17acff;
+}
+/*关闭按钮*/
+.confui.snowball a.close {
+  text-decoration: none;
+  cursor: pointer;
+  color: #bf0005;
+}
+.confui.snowball a.close:active {
+  color: #bf0005;
+}
+.confui.snowball a.close:hover {
+  color: #ff0000;
+}
+/*列表链接*/
+.confui.snowball .listlink {
+  text-decoration: none;
+  color: #333333;
+}
+.confui.snowball .listlink:visited {
+  color: #333333;
+}
+.confui.snowball .listlink:hover {
+  color: #333333;
+}
+/*选中状态*/
+.confui.snowball .current {
+  border: 1px solid #dddddd;
+  background: #bbbbbb;
+  padding: 0.5em 0.8em;
+  border-radius: 4px;
+}
+.confui.snowball .current-noborder {
+  background: #bbbbbb;
+  border-radius: 4px;
+}
+.confui.snowball input,
+.confui.snowball select {
+  padding: .5em;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  color: #545454;
+  box-sizing: border-box;
+}
+/*
+.confui.snowball input[type=checkbox],
+.confui.snowball input[type=radio]{
+  height:auto;
+}
+*/
+.confui.snowball textarea {
+  padding: .5em;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  min-height: 5em;
+  color: #545454;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+.confui.snowball select {
+  -webkit-appearance: initial;
+  font-size: inherit;
+  cursor: pointer;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAYAAACJgPRIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMNJREFUeNqMUdERwiAMbaj/OgJO4Ah2lI5QJwA26AjdQDfg2EA36AjtBPXlLigqlr67kEt4CeSFlmWpStilgXOugbOw3hhzi3n1VdTDzrABBYcfEpIt3EnCPayLd8R/kqpRLlMc8ewYO3UZAmPgoyYiDX/9M5gOAHfSBQU0bdFJVRtA1loW0K9wLkpGX8O99t5PGIAQNBlCgE5WJeuYM6T29XGwp3QNcVOs9sd0SLC6Dwln6Z6VgLsFfka6vxdcwlOAAQB3fT4YAQKO8gAAAABJRU5ErkJggg==);
+  background-position: 96% center;
+  background-repeat: no-repeat;
+  color: #545454;
+}
+.confui.snowball input:active,
+.confui.snowball textarea:active,
+.confui.snowball input:focus,
+.confui.snowball select:active,
+.confui.snowball select:focus,
+.confui.snowball select:active {
+  border: 1px solid #1574b5;
+}
+/*不合法*/
+.confui.snowball input:invalid,
+.confui.snowball select:invalid,
+.confui.snowball textarea:invalid,
+.confui.snowball input:focus:invalid,
+.confui.snowball select:focus:invalid,
+.confui.snowball textarea:focus:invalid {
+  border: 1px solid #bf0005;
+}
+.confui.snowball input[disabled],
+.confui.snowball input[readonly],
+.confui.snowball select[disabled],
+.confui.snowball select[readonly] {
+  background: #dddddd;
+}
+.confui.snowball button.primary {
+  padding: 0.3em 1.2em 0.3em 1.2em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #0097ff;
+  border: 1px solid #0097ff;
+  color: #ffffff;
+  font-size: 1em;
+}
+.confui.snowball button.primary:hover {
+  background: #17acff;
+}
+.confui.snowball button.primary:active,
+.confui.snowball button.primary.toggle {
+  background: #0099dd;
+}
+.confui.snowball button.primary:disabled,
+.confui.snowball button.primary.disabled {
+  cursor: default;
+  background: #9ce1ff;
+  border: 1px solid #9ce1ff;
+}
+.confui.snowball button {
+  padding: 0.3em 1.2em 0.3em 1.2em;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #5b5b5b;
+  border: 1px solid #5b5b5b;
+  color: #ffffff;
+  font-size: 1em;
+}
+.confui.snowball button:hover {
+  background: #707070;
+}
+.confui.snowball button:active,
+.confui.snowball button.toggle {
+  background: #484848;
+}
+.confui.snowball button:disabled,
+.confui.snowball button.disabled {
+  cursor: default;
+  background: #d1d1d1;
+  border: 1px solid #d1d1d1;
+}
+.confui.snowball .codeblock {
+  background: #f6f6f6;
+  border: 1px solid #dddddd;
+}
+.confui.snowball .dialog {
+  min-width: 350px;
+  box-shadow: #666666 0px 0px 5px;
+}
+.confui.snowball .overlay {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 10;
+  background: #000;
+  opacity: 0.2;
+}

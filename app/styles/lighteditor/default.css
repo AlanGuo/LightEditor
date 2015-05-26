@@ -1,0 +1,30 @@
+/*lighteditor样式不可变更*/
+.le-common-default{
+	border: 0 !important;
+	font-family:Consolas, 'Liberation Mono', Courier, monospace !important;
+	font-size: 12px !important;
+	line-height: 18px !important;
+	min-height: 100px !important;
+	position:absolute !important;
+	width:100% !important;
+	box-sizing:border-box !important;
+	-moz-box-sizing:border-box !important;
+}
+.le-textarea-default{
+	padding: 10px 10px 10px 51px !important;
+	background-color: transparent !important;
+	overflow: hidden !important;
+	resize: none !important;
+	word-wrap: break-word !important;
+}
+.le-textboard-default{
+	padding: 0  !important;
+	background-color: transparent  !important;
+}
+.le-pre-default{
+	padding: 10px 10px 10px 51px  !important;
+	background-color: transparent  !important;
+	top:0  !important;
+	word-wrap: break-word  !important;
+	visibility: hidden  !important;
+}

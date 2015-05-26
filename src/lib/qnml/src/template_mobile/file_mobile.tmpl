@@ -1,0 +1,49 @@
+<template name="QNML.STYLE.FILE">
+	.file-bg{
+        background: #f1f1f1;
+        padding: 15px 10px;
+        color: #000;
+        font-size: 14px;
+        width:300px;
+        margin:0 auto;
+    }
+    .file-play{
+        float:left;
+    }
+    .file-tag{
+        float:left;
+        margin-left:10px;
+        width: 50%;
+    }
+    .file-filename{
+        font-size:18px;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .file-createtime{
+
+    }
+    .file-filesize{
+        float: right;
+        color: #666;
+        margin-right:47px
+    }
+    .file-clear{
+        clear:both;
+    }
+</template>
+<template name="QNML.TPL.FILE">
+	<div class="file-bg" src="<%=src%>" _event="file">
+	    <img class="file-play" style="width:20px;height:20px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAABDCAYAAADHyrhzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyMTkzMjhCRERDQ0ZFMjExODM1REY3NUUyQTE2NjE1RSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFQjYxREMyOEZCMTkxMUUyQjNEMkZDNDNGRTFCMDZBRiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFQjYxREMyN0ZCMTkxMUUyQjNEMkZDNDNGRTFCMDZBRiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NUUwNUNDNTkzRjIwNjgxMTkyQjA5NkY3NDg2OEJEM0IiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjE5MzI4QkREQ0NGRTIxMTgzNURGNzVFMkExNjYxNUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7R6YqrAAAFa0lEQVR42uycXWgcVRTHz8x+dpNNakjR2NSKrZqkItoGbLEVH+MHCmJ9qIIfUFMQ/EqtL0rVl1abPuiLBMWqaB/aF33R4JMgsVpIC4E2ahJorGKla9dkYrrdjxnP2TlLpsNud2f33snMbA78Iezu3HvuL/fce+6dO6MYhgErZpq6gmDJwqU/7vk+L7uutahtqF5UD+o21A2odlSSf6Oh5lAXUL+hfkFNok6g/pTp3M/3h5dgSLItqF2oBxlANUuyulH9tu8IzDeoo6hxqT1DoFFjBlHPovoEltvDehV1FnUENcK9yXNjxmrUftQ51CHBIOzWx3Wc4zpXewWGgnoGNYV6C9Xh4pjXwXVOsQ/KcsLYiPqBu2znMk4EnewD+bJhOWDs5IHsXg/NjuTLKfbNFRjUFYdRx1BtHkwX2ti3Yadh4xRGFPUFasgHOdQQ+xqVAYMK/ZrzBr/YLvY5KhIGdbdPUAM+zLIH2HdFFIwDqCd9vOwg3w+KgPE46vUArMP2VZtlqsG4BfVxgBamH3GbHMOgGPuMV5VBsXZuk+IUxtOo7QHcttjOqXvNMGjh8x4E194tt7irBOMl1JoAw1jDbawKoxX1IgTfqI1J6wflNnf2iFqGx1UdhjaoMNAVhqiDXPdixoA9p7LwRzYke/k/yGuYsj2DRtnnhVRl6PAKTmKPrHUGgmwitQgH7ghBd7Qgu3cMWmcWu5u0YXurEBb5HDzQFanr2ql0Bt44mUIgYdlANnKby8LYKaoWo5CHWKi+jSdFVWFmwYA3x9NuAHmiEgxhCzFD1+u/GGGo8QTMXFbdADJQDgZtz/eAB6wdBxklFAY1usoNILej1tlhbPXKnPfQTS3QHQc3gWyzT613eQVGMqLC51sT8N2FPPyTQxf1luKAfF7LwoebY/DwWLYISqDdiTpmLbHXSxlRa0SBx9ZZZ6PYVTOVYBi99jBZ75fU0dCFh8p6e5h0yWzA6b8X4Ezqcl3XbupcBXdf32qhIfwYRacdRlImDC1nwIKOHVFxmHtgw+la2VHpKoz7upMoz0ZestJCTVKY/AdnL2Xq6hl9HXEMkxbpPlphaDJ7h5bTQcuD81vDhnmtZNNcheHxMFmww/gLdWOThknKDmMWzGNHzRgms3YYk008m0zaYUw08WwyYYdxQm7S5ekw+ckO4zzqV17fN1OY0HnT3+0LNbJRaD77tvSHHcZxkbVcKYhfU0go83glGD+ipkXUQJu6o7OacBhUJpUtyKa5zWVhEPYRITBCYTg4MQdfTaXxv6kL6BF6sSwqU+DGzgi32fS59IiF5SB9kpOQ6xrcgYFCZhEKi/NgXMk0vCGjqCFQYnEIJdogFE/QB42CSPOmTrH7VjpIT1++D+bJ20a8LzqthiPFeygN3TrgsKMeoWB5AkCQfQC2c+eV+hvBeAEavROPTiuRWFEes4sM4yqrhPhfCMY5rkpGbbtUKwyyT1FjAQQxxm0DJzBoZKWjTHMBAjHHbTKcwiCbQe0OEIzd3CaoB0YpQzsUABDD1TLsWucoGnC+9DEI8n1ftR/VCoNi7DmfLuRG2XdDFAyyLOpRMJ8e9IsdZZ+ztfzYaSpHhT6FOuwDEIfZ12ytF9ST11J32wvm8Z95D0KYZ9/21hIajcKwzjJbPJaYkS+b692XaXTFQ/sBO3iASi0jhBT7sONaeYRsGKWwocco6cjk2+VyfolGdb3DdR9xGhYyYFgXd7Tsvxn1Gsi9DzPJdVBd+7nuhk3GKyM0zvboEe1+3g4QsZU4zWX1c9nDIPA5+GvtZ4iycdbLsPTKiE1g3o4ovTKCdtQSqByYN4DTLNrCp1sXZ8CFV0YUt19W3qyyZP8LMACcN3pB8MuqHwAAAABJRU5ErkJggg==" />
+	        <div class="file-tag">
+	            <div class="file-filename"><%=name%></div>
+	            <div class="file-createtime"><%=createtime%></div>
+	        </div>
+	        <div class="file-filesize">
+	            <%=filesize%>
+	        </div>
+            <div class="file-clear"></div>
+	</div>
+</template>

@@ -1,0 +1,40 @@
+<template name="QNML.STYLE.FILE">
+.g_md_clipBox{-moz-user-select:none; -webkit-user-select:none; font-weight:normal!important; text-decoration:none!important; color:#666; margin-bottom: 10px;}
+.g_md_clipBox strong{font-weight:normal}
+.g_md_clipBox u{text-decoration:none}
+.g_md_clipBox em{font-style:normal}
+.file_box{cursor:pointer}
+.file_box:hover{background-color:#f5f5f5!important}
+.qnml-box .g_ico_popClose{display:none}
+.ve-editor .qnml-box .g_ico_popClose{display:inherit}
+</template>
+
+<template name="QNML.TPL.FILE">
+<div class="qnml-box">
+    <div>&nbsp;</div><!--no url start-->
+    <div data-qnml="<%=data.tag%>" class="content_delete_ie">
+        <div title="<%=data.name%>" class="g_md_clipBox file_box" contenteditable="false" unselectable="on" _event="viewFile" data-name="<%=data.name%>" data-type="<%=data.filetype%>" <% if(data.src){ %> data-src="<%=data.src%>"<% } %> >
+            <% 
+    		var fileIco = "";
+    		if (data.filetype == 0) {
+    			fileIco = "clip_normal";
+    		} else if (data.filetype == 1) {
+    			fileIco = "clip_normal";
+    		} else {
+    			fileIco = "clip_normal";
+    		}
+    		%>
+            <span class="ico_clip <%=fileIco%>"></span>
+            <p class="clipName"><%=data.name%></p>
+            <% if(data.percent){ %>
+            <p class="progressBar"><span class="progress" style="width:<%=data.percent%>"></span></p>
+            <% } %>
+            <% if(data.filesize){ %>
+            <p class="size"><%=data.filesize%></p>
+            <% } %>
+            <span class="g_ico g_ico_popClose" _event="delFile" title="删除附件"></span>
+        </div>
+    </div><!--no url end-->
+    <div>&nbsp;</div>
+</div>
+</template>

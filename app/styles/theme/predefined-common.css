@@ -1,0 +1,310 @@
+/*预定义宽度和高度*/
+.confui .w30 {
+  width: 30px !important;
+}
+.confui .w30p {
+  width: 30% !important;
+}
+.confui .w40 {
+  width: 40px !important;
+}
+.confui .w40p {
+  width: 40% !important;
+}
+.confui .w50 {
+  width: 50px !important;
+}
+.confui .w50p {
+  width: 50% !important;
+}
+.confui .w60 {
+  width: 60px !important;
+}
+.confui .w60p {
+  width: 60% !important;
+}
+.confui .w70 {
+  width: 70px !important;
+}
+.confui .w70p {
+  width: 70% !important;
+}
+.confui .w100 {
+  width: 100px !important;
+}
+.confui .w200 {
+  width: 200px !important;
+}
+.confui .w70p {
+  width: 70% !important;
+}
+.confui .w20p {
+  width: 20% !important;
+}
+.confui .w80 {
+  width: 80px !important;
+}
+.confui .w80p {
+  width: 80% !important;
+}
+.confui .w100 {
+  width: 100px !important;
+}
+.confui .w100p {
+  width: 100% !important;
+}
+.confui .w200 {
+  width: 200px !important;
+}
+.confui .w300 {
+  width: 300px !important;
+}
+.confui .w400 {
+  width: 400px !important;
+}
+.confui .w500 {
+  width: 500px !important;
+}
+.confui .w600 {
+  width: 600px !important;
+}
+.confui .w700 {
+  width: 700px !important;
+}
+.confui .w800 {
+  width: 800px !important;
+}
+.confui .w900 {
+  width: 900px !important;
+}
+.confui .w1000 {
+  width: 1000px !important;
+}
+.confui .h30 {
+  height: 30px !important;
+}
+.confui .lh30 {
+  line-height: 30px !important;
+}
+.confui .h50 {
+  height: 50px !important;
+}
+.confui .lh50 {
+  line-height: 50px !important;
+}
+.confui .h60 {
+  height: 60px !important;
+}
+.confui .lh60 {
+  line-height: 60px !important;
+}
+.confui .h100 {
+  height: 100px !important;
+}
+.confui .lh100 {
+  line-height: 100px !important;
+}
+.confui .h200 {
+  height: 300px !important;
+}
+.confui .lh200 {
+  line-height: 200px !important;
+}
+.confui .h300 {
+  height: 300px !important;
+}
+.confui .lh300 {
+  line-height: 300px !important;
+}
+.confui .h400 {
+  height: 400px !important;
+}
+.confui .h500 {
+  height: 500px !important;
+}
+.confui .h600 {
+  height: 600px !important;
+}
+.confui .h700 {
+  height: 700px !important;
+}
+.confui .h800 {
+  height: 800px !important;
+}
+.confui .h900 {
+  height: 900px !important;
+}
+.confui .w1000 {
+  height: 1000px !important;
+}
+.confui .m10 {
+  margin: 10px !important;
+}
+.confui .mt10 {
+  margin-top: 10px !important;
+}
+.confui .ml10 {
+  margin-left: 10px !important;
+}
+.confui .mr10 {
+  margin-right: 10px !important;
+}
+.confui .mb10 {
+  margin-bottom: 10px !important;
+}
+.confui .m20 {
+  margin: 20px !important;
+}
+.confui .mt20 {
+  margin-top: 20px !important;
+}
+.confui .ml20 {
+  margin-left: 20px !important;
+}
+.confui .mr20 {
+  margin-right: 20px !important;
+}
+.confui .mb20 {
+  margin-bottom: 20px !important;
+}
+.confui .m30 {
+  margin: 30px !important;
+}
+.confui .ml30 {
+  margin-left: 30px !important;
+}
+.confui .mt30 {
+  margin-top: 30px !important;
+}
+.confui .mr30 {
+  margin-right: 30px !important;
+}
+.confui .mb30 {
+  margin-bottom: 30px !important;
+}
+.confui .m40 {
+  margin: 40px !important;
+}
+.confui .ml40 {
+  margin-left: 40px !important;
+}
+.confui .mt40 {
+  margin-top: 40px !important;
+}
+.confui .mr40 {
+  margin-right: 40px !important;
+}
+.confui .mb40 {
+  margin-bottom: 40px !important;
+}
+.confui .m50 {
+  margin: 50px !important;
+}
+.confui .ml50 {
+  margin-left: 50px !important;
+}
+.confui .mt50 {
+  margin-top: 50px !important;
+}
+.confui .mr50 {
+  margin-right: 50px !important;
+}
+.confui .mb50 {
+  margin-bottom: 50px !important;
+}
+.confui .m60 {
+  margin: 60px !important;
+}
+.confui .ml60 {
+  margin-left: 60px !important;
+}
+.confui .mt60 {
+  margin-top: 60px !important;
+}
+.confui .mr60 {
+  margin-right: 60px !important;
+}
+.confui .mb60 {
+  margin-bottom: 60px !important;
+}
+.confui .m70 {
+  margin: 70px !important;
+}
+.confui .ml70 {
+  margin-left: 70px !important;
+}
+.confui .mt70 {
+  margin-top: 70px !important;
+}
+.confui .mr70 {
+  margin-right: 70px !important;
+}
+.confui .mb70 {
+  margin-bottom: 70px !important;
+}
+.confui .m80 {
+  margin: 80px !important;
+}
+.confui .ml80 {
+  margin-left: 80px !important;
+}
+.confui .mt80 {
+  margin-top: 80px !important;
+}
+.confui .mr80 {
+  margin-right: 80px !important;
+}
+.confui .mb80 {
+  margin-bottom: 80px !important;
+}
+.confui .m100 {
+  margin: 100px !important;
+}
+.confui .ml100 {
+  margin-left: 100px !important;
+}
+.confui .mt100 {
+  margin-top: 100px !important;
+}
+.confui .mr100 {
+  margin-right: 100px !important;
+}
+.confui .mb100 {
+  margin-bottom: 100px !important;
+}
+.confui .m200 {
+  margin: 200px !important;
+}
+.confui .ml200 {
+  margin-left: 200px !important;
+}
+.confui .mt200 {
+  margin-top: 200px !important;
+}
+.confui .mr200 {
+  margin-right: 200px !important;
+}
+.confui .mb200 {
+  margin-bottom: 200px !important;
+}
+.confui .p5 {
+  padding: 5px !important;
+}
+.confui .p10 {
+  padding: 10px !important;
+}
+.confui .p15 {
+  padding: 15px !important;
+}
+.confui .p20 {
+  padding: 20px !important;
+}
+.confui .p30 {
+  padding: 30px !important;
+}
+.confui .none {
+  display: none !important;
+}
+.confui .hidden {
+  visibility: hidden !important;
+}

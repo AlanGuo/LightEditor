@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>QNML</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <script type="text/javascript" src="../qnml.js"></script>
+    <style type="text/css">
+        body{
+              font-size: 12px;
+        }
+        #editor{
+            height: 600px;
+            width: 500px;
+            outline: none;
+            
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: left;
+            padding-left: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--编辑器-->
+    <div class="left">
+        <textarea id="editor" onkeyup="create()"></textarea>
+    </div>
+
+    <!--列表-->
+    <div class="right" id='ret'>
+        view here
+    </div>
+</body>
+<script type="text/javascript">
+    var editorEl = $('editor');
+    var retLi = $('ret')
+
+    function $(id){
+        return document.getElementById(id)
+    }
+	function create(){
+       
+        var text = editorEl.value;
+        var html = qnml.parseAll(text);
+        retLi.innerHTML = html;
+    }
+
+</script>
+
+</html>
