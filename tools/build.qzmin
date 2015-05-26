@@ -14,8 +14,8 @@
 			},
 			{
 				name :  "lighteditor.js",
-				target : ["../apps/scripts/lighteditor-1.0.js"],
-				compiler:"../release/lighteditor-1.0.min.js",
+				target : ["../dist/lighteditor-1.0.js"],
+				compiler:"../dist/lighteditor-1.0.min.js",
 				include : [
 					"../src/lib/qnml/qnml-1.0.js",
 					"../src/lib/undo-1.0.js",
